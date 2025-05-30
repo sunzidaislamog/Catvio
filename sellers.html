@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catvio - Sellers</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F8F8F8;
+      color: #2B2B2B;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #5D3A99;
+      color: #F8F8F8;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(93, 58, 153, 0.3);
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      cursor: default;
+    }
+    nav a {
+      color: #F8F8F8;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      color: #F4C1D9;
+    }
+    .sellers-list {
+      max-width: 900px;
+      margin: 60px auto 100px;
+      padding: 0 20px;
+    }
+    .seller {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+    .seller:hover {
+      box-shadow: 0 10px 30px rgba(93, 58, 153, 0.25);
+    }
+    .seller h3 {
+      color: #5D3A99;
+      margin-bottom: 8px;
+    }
+    .seller p {
+      color: #2B2B2B;
+      font-weight: 300;
+    }
+    footer {
+      background-color: #2B2B2B;
+      color: #A49E9E;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catvio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="sellers.html" class="active">Sellers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="sellers-list">
+    <div class="seller">
+      <h3>Riya Fashion</h3>
+      <p>Exclusive women's clothing seller from Dhaka.</p>
+    </div>
+
+    <div class="seller">
+      <h3>Elegant Accessories</h3>
+      <p>Handcrafted bags and watches seller.</p>
+    </div>
+
+    <div class="seller">
+      <h3>Style Hub</h3>
+      <p>Trendy fashion and footwear for all ages.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Catvio. All rights reserved.
+  </footer>
+</body>
+</html>

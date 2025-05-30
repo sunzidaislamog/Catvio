@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catvio - Elegant Fashion Marketplace</title>
+  <style>
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F8F8F8;
+      color: #2B2B2B;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #5D3A99;
+      color: #F8F8F8;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(93, 58, 153, 0.3);
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      cursor: default;
+    }
+
+    nav a {
+      color: #F8F8F8;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #F4C1D9;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 60px;
+      background: linear-gradient(135deg, #5D3A99 30%, #F4C1D9 90%);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-weight: 300;
+    }
+
+    .btn-primary {
+      background-color: #F4C1D9;
+      color: #5D3A99;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(244,193,217,0.5);
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #dca3be;
+    }
+
+    .products {
+      max-width: 1100px;
+      margin: 50px auto 100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(93, 58, 153, 0.25);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px 20px;
+    }
+
+    .product-title {
+      font-weight: 600;
+      color: #5D3A99;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .product-price {
+      font-weight: 600;
+      color: #F4C1D9;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #2B2B2B;
+      color: #A49E9E;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catvio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Sellers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Elevate Your Style with Catvio</h2>
+    <p>Discover the latest fashion trends from trusted sellers, delivered right to your doorstep.</p>
+    <button class="btn-primary">Shop Now</button>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Product 1" class="product-img" />
+      <div class="product-info">
+        <h3 class="product-title">Elegant Dress</h3>
+        <p class="product-price">৳3,500</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1520975914324-01f77be84d0c?auto=format&fit=crop&w=600&q=80" alt="Product 2" class="product-img" />
+      <div class="product-info">
+        <h3 class="product-title">Classic Watch</h3>
+        <p class="product-price">৳5,200</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Product 3" class="product-img" />
+      <div class="product-info">
+        <h3 class="product-title">Stylish Handbag</h3>
+        <p class="product-price">৳4,100</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Catvio. All rights reserved.
+  </footer>
+</body>
+</html>
